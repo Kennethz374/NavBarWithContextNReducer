@@ -10,9 +10,10 @@ import {
   withStyles
 } from '@material-ui/core'
 import {  SearchIcon } from '@material-ui/icons/Search'
-import { mergeClasses } from "@material-ui/styles";
+import styles from "../Styles/NavigationStyles";
 
-export default function Navigation() {
+function Navigation(props) {
+  const {classes} = props;
   return (
     <div className = {classes.root}>
       <AppBar position="static" color="primary">
@@ -35,3 +36,4 @@ export default function Navigation() {
     </div>
   )
 }
+export default withStyles(styles)(Navigation);
