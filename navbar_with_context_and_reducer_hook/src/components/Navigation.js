@@ -9,7 +9,7 @@ import {
   Switch,
   withStyles
 } from '@material-ui/core'
-import {  SearchIcon } from '@material-ui/icons'
+import {  SearchIcon } from '@material-ui/icons/Search'
 import { mergeClasses } from "@material-ui/styles";
 
 export default function Navigation() {
