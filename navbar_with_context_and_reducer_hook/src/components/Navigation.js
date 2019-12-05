@@ -4,7 +4,8 @@ import {
   Toolbar,
   Typography,
   Switch,
-  IconButton
+  IconButton,
+  InputBase
 } from '@material-ui/core/'
 import SearchIcon from "@material-ui/icons/Search"
 import useStyles from "../Styles/NavigationStyles"
@@ -21,8 +22,14 @@ function Navigation() {
           <div className={classes.grow}/>
           <div className={classes.search}>
             <div>
-              <SearchIcon />
+              <SearchIcon className={classes.searchIcon}/>
             </div>
+            <InputBase 
+              placeholder="Search..." 
+              classes={{
+                root: classes.inputRoot, //for root style
+                input: classes.inputInput // for style of whatever input there
+            }}/>
           </div>
         </Toolbar>
       </AppBar>

@@ -34,6 +34,32 @@ const useStyles = makeStyles(theme => ({
       marginLeft: theme.spacing.unit,
       width: "auto"
     }
+  },
+  searchIcon:{
+    width: theme.spacing.unit * 9,
+    height: "100%",
+    position:"absolute",
+    display:"flex",
+    alignItems: "center",
+    justifyContent:"center"
+  },
+  inputRoot: {
+    color: "inherit",
+    width: "100%"
+  },
+  inputInput: {
+    paddingTop: theme.spacing.unit,
+    paddingRight: theme.spacing.unit,
+    paddingLeft: theme.spacing.unit * 10,
+    paddingBottom: theme.spacing.unit,
+    transition: theme.transitions.create("width"),
+    width: "100%",
+      [theme.breakpoints.up("sm")]:{
+        width:120,
+        "&:focus":{
+          width: 200
+        }
+      }
   }
 }));
 
