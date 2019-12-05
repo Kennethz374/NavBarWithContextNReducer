@@ -19,7 +19,7 @@ function Navigation() {
           <Typography className={classes.title}>Simple Nav</Typography>
           <Switch />
           <div className={classes.grow}/>
-          <div>
+          <div className={classes.search}>
             <div>
               <SearchIcon />
             </div>
