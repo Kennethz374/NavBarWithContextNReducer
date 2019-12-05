@@ -16,9 +16,9 @@ function Navigation() {
       <AppBar>
         <Toolbar>
           <IconButton className={classes.menuButton}>🇨🇳</IconButton>
-          <Typography>Simple Nav</Typography>
+          <Typography className={classes.title}>Simple Nav</Typography>
           <Switch />
-          <div />
+          <div className={classes.grow}/>
           <div>
             <div>
               <SearchIcon />
