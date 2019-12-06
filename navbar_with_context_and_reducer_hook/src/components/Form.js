@@ -20,8 +20,22 @@ export default function Form() {
   const classes = useStyles();
   return (
     <main className={classes.main}>
-      <Paper>
-        <h1>Form</h1>
+      <Paper className={classes.paper}>
+        <Avatar className={classes.avatar}>
+          <LockOutlineIcon />
+        </Avatar>
+        <Typography variant='h5'> Sign in </Typography>
+        <Select>
+          <MenuItem>Chinese</MenuItem>
+          <MenuItem>English</MenuItem>
+        </Select>
+        <form className={classes.form}>
+          <FormControl margin="normal" required fullWidth>
+            <InputLabel htmlFor="email">Email</InputLabel>
+            <Input id="email" name="email" autoFocus>
+            </Input>
+          </FormControl>
+        </form>
       </Paper>
     </main>
   )
