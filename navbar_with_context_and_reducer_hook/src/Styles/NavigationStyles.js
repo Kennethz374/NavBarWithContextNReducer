@@ -7,7 +7,6 @@ const useStyles = makeStyles(theme => ({
     marginBottom: 0
   },
   menuButton: {
-    backgroundColor: "green",
     marginRight: theme.spacing(4),
   },
   grow: {
@@ -57,7 +56,7 @@ const useStyles = makeStyles(theme => ({
       [theme.breakpoints.up("sm")]:{
         width:120,
         "&:focus":{
-          width: 200
+          width:200
         }
       }
   }
