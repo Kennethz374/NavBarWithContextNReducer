@@ -35,6 +35,25 @@ export default function Form() {
             <Input id="email" name="email" autoFocus>
             </Input>
           </FormControl>
+
+          <FormControl margin="normal" required fullWidth>
+            <InputLabel htmlFor="password">Password</InputLabel>
+            <Input id="password" name="password" autoFocus>
+            </Input>
+          </FormControl>
+
+          <FormControlLabel 
+            control={<Checkbox color="primary"/>}
+            label = "Remember Me"
+          />
+          <Button className={classes.submit} 
+            variant="contained" 
+            color="primary" 
+            type="submit" 
+            fullWidth
+          >
+            Sign in
+          </Button>
         </form>
       </Paper>
     </main>
