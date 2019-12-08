@@ -25,9 +25,9 @@ export default function Form() {
           <LockOutlineIcon />
         </Avatar>
         <Typography variant='h5'> Sign in </Typography>
-        <Select>
-          <MenuItem>Chinese</MenuItem>
-          <MenuItem>English</MenuItem>
+        <Select value="English">
+          <MenuItem value="Chinese">Chinese</MenuItem>
+          <MenuItem value="English">English</MenuItem>
         </Select>
         <form className={classes.form}>
           <FormControl margin="normal" required fullWidth>
