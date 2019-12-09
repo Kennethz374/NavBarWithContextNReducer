@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import {
   AppBar,
   Toolbar,
@@ -9,12 +9,14 @@ import {
 } from '@material-ui/core/'
 import SearchIcon from "@material-ui/icons/Search"
 import useStyles from "../Styles/NavigationStyles"
+import {ThemeContext} from "../contexts/ThemeContext"
 
-function Navigation() {
+function Navigation(props) {
+  const {isDarkMode, toggleTheme} = useContext(ThemeContext)
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <AppBar>
+      <AppBar position="static" color={isDarkMode? "default":"primary"}>
         <Toolbar>
           <IconButton className={classes.menuButton}>🇨🇳</IconButton>
           <Typography className={classes.title}>Simple Nav</Typography>
