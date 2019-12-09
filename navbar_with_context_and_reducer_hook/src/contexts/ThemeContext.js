@@ -4,9 +4,12 @@ import React, {createContext, useState} from 'react'
 export const ThemeContext = createContext();
 
 export default function ThemeProvider (props) {
-  const [isDarkMode, setDarkMode] = useState(true)
+  const [isDarkMode, setDarkMode] = useState(false)
+  const toggleTheme= () => {
+    setDarkMode(!isDarkMode)
+  }
   return (
-    <ThemeContext.Provider value={{isDarkMode, tasteLikeChicken:true}}>
+    <ThemeContext.Provider value={{isDarkMode, toggleTheme:toggleTheme}}>
       {props.children}
     </ThemeContext.Provider>
   )
